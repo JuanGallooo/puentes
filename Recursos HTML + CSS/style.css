@@ -1,0 +1,171 @@
+/* SELECTOR : Son parte de las reglas CSS que nos indican a quien le haremos cambio sobre el template*/
+
+
+/*SELECTOR UNIVERSAL : Modifica todos el template / no es muy usado*/
+*{
+
+}
+
+/*SELECTOR DE ETIQUETA : Modifica todos los elementos que contengan esta etiqueta*/
+h1{
+	color : blue ;
+	/*Modifica el tamaño de la fuente*/
+	font-size: 40px;
+}
+
+h2,h3{
+	color:green;
+}
+
+h6{
+	color:red;
+}
+
+/*SELECTOR DESCENDENTES : Apuntan hacia elementos dentro de otros elementos*/
+
+/*apunta hacia los a que estan dentro de los elementos p*/
+p a {
+	color:orange;
+}
+
+/*SELECTOR DE CLASE*/
+
+.youtube {
+	color:green;
+}
+
+/*SELECTOR DE ID : Deben ser unicos ( no es muy bueno utilizarlos, mejor usa las clases)*/
+
+#name{
+
+}
+
+/*SELECTOR DE PROPIEDAD ESPECIFICA*/
+a[href="link"]{
+
+}
+
+
+.example{
+	background-color: yellow;
+	text-align: center;
+}
+
+.example_modelo0{
+	width: 500px;
+	/*50%*/
+	background-color: yellow;
+
+}
+
+.example_modelo1{
+	height: 300px;
+	background-color: blue;
+	margin: 20px;
+/*	(2 valores ==> (x,y) 
+	, x modifica hacia arriba y abajo
+	  y modifa los lados)*/
+	padding: 30px;
+}
+
+.example_modelo2{
+	background-color: purple;
+	margin: 20px;
+/*	(2 valores ==> (x,y) 
+	, x modifica hacia arriba y abajo
+	  y modifa los lados)*/
+}
+
+.example_modelo3{
+	background-color: green;
+	padding: 30px;
+}
+
+.example_modelo4{
+	border: 10px solid;
+	margin: 20px;
+
+}
+
+.example_modelo5{
+	border: 10px dotted;
+	margin: 20px;
+
+}
+.div_image1{
+	width: 100%;
+	background: #ccc;
+}
+
+.fondo1{
+	/*(../) devuelve una carpeta*/
+	background :url(metal.jpg);
+}
+
+
+.image1{
+	width: 300px;
+	height: auto;
+	/*para centrar la imagen o contenedores margin:auto*/
+	margin: auto;
+	display: block;
+
+}
+
+
+
+form{
+
+	width: 25%;
+	border : 1px solid #ccc;
+	margin: 20px;
+	padding: 20px;
+
+
+}
+
+label{
+	font-size: 12px;
+	display: block;
+	width: 100px;
+}
+
+input{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+/*para que el usuario sepa donde esta escribiendo*/
+input:focus{
+	border: 1px solid #1668c4;
+}
+
+
+
+table{
+	border: 1px solid #000;
+	/*para quitarle los separadores a las celdas*/
+	border-collapse: collapse;
+}
+
+table td{
+	border: 1px solid #000;
+	padding: 20px;
+}
+
+table tr:hover{
+	background: #ccc;
+}
+
+table td:hover{
+	background: #000;
+	color:white;
+}
+
+
+body{
+
+	background: #fff;
+
+}
+ 
